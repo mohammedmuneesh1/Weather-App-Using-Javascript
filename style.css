@@ -128,10 +128,15 @@ body{
    /* margin-top: 30px; */
    /* margin:0px auto; */
 }
+.weather-description{
+  color:whitesmoke;
+  margin-top:-5rem;
+  font-size:20px;
+}
 
 
 .weather-details h1 {
-  font-size:5rem;
+  font-size:5.5rem;
   color: whitesmoke;
   font-weight: 600;
   /* margin-top: -1rem; */
@@ -146,7 +151,7 @@ body{
 .weather-details h2{
   font-size: 3rem;
   color: whitesmoke;
-  font-weight: lighter;
+  font-weight: 400;
   /* margin-top: -1.5rem; */
 }
 .col-sub p{
@@ -194,12 +199,18 @@ body{
       height: 31px;
   }
   .s-icon{
-    height:18px;
-    width:18px;
+    height:20px;
+    width:20px;
   }
   .weather-icon{
    width:150px;
      
+  }
+  .weather-description{
+    color:whitesmoke;
+    margin-top:-5rem;
+    font-size:.8rem;
+    letter-spacing: 1px;
   }
   .weather-details h1{
     font-size:3rem;
@@ -209,12 +220,12 @@ body{
   .max-min{
     color:white;
     margin-top:-0.5rem;
-    font-size:.55rem;
+    font-size:.75rem;
     margin-top: 1px;
-    letter-spacing:0rem;
+    letter-spacing:0px;
   }
   .weather-details h2{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-top: 0rem;
   }
   .details{
@@ -239,5 +250,4 @@ body{
   }
 
 }
-
 
