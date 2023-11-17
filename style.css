@@ -5,11 +5,19 @@
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-body{
-    background: #0F2027;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+
+body{
+  max-width:100%;
+  min-height: 100vh;
+  /*  THEME ONE 
+  background: #36D1DC;  
+  background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  
+  background: linear-gradient(to right, #5B86E5, #36D1DC);  */
+  background: #4b6cb7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 
 }
 /* .card{
@@ -129,11 +137,17 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
   /* margin-top: -1rem; */
   letter-spacing:.1em;
 }
+.max-min{
+  color:white;
+  margin-top:-0.5rem;
+  font-size:1rem;
+  letter-spacing:.1rem;
+}
 .weather-details h2{
   font-size: 3rem;
   color: whitesmoke;
   font-weight: lighter;
-  margin-top: -1.5rem;
+  /* margin-top: -1.5rem; */
 }
 .col-sub p{
   color:white;
@@ -176,12 +190,12 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
 
   }
   .searchButton{
-      width: 25px;
-      height: 25px;
+      width: 31px;
+      height: 31px;
   }
   .s-icon{
-    height:14px;
-    width:14px;
+    height:18px;
+    width:18px;
   }
   .weather-icon{
    width:150px;
@@ -191,6 +205,13 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     font-size:3rem;
   font-weight: 500;
   letter-spacing: 2px;
+  }
+  .max-min{
+    color:white;
+    margin-top:-0.5rem;
+    font-size:.55rem;
+    margin-top: 1px;
+    letter-spacing:0rem;
   }
   .weather-details h2{
     font-size: 1.5rem;
@@ -214,10 +235,6 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     width:100%;
     text-align: center;
     margin:0px;
-
-  }
-  .col-sub p {
-
 
   }
 
