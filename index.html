@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="icon" href="images/Blue-icon2.png"  >
+    <!-- Include SweetAlert library-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!--custom css-->
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="icon" href="images/Blue-icon2.png" />
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
-
-
     <div class="searchBox">
       <input
         class="searchInput"
@@ -17,7 +20,7 @@
         name=""
         placeholder="Check weather in"
       />
-      <button class="searchButton" >
+      <button class="searchButton">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="29"
@@ -90,17 +93,20 @@
     <div class="weather">
       <div class="weather-details">
         <img src="" class="weather-icon" />
-        <br>
+        <br />
         <span class="weather-description">123</span>
-        <h1 class="temp"></h1> <!--22c-->
+        <h1 class="temp"></h1>
+        <!--22c-->
         <p class="max-min"></p>
-        <h2 class="city"></h2><!--London-->
+        <h2 class="city"></h2>
+        <!--London-->
         <div class="details">
           <div class="col">
             <img src="images/humidity.png" alt="weather-humidity" />
             <div class="col-sub">
               <p class="A-P"></p>
-              <p class="humidity"></p> <!---50%-->
+              <p class="humidity"></p>
+              <!---50%-->
               <p>humdity</p>
             </div>
           </div>
@@ -108,8 +114,10 @@
           <div class="col">
             <img src="images/wind.png" alt="weather-wind" />
             <div class="col-sub">
-              <p class="wind"></p> <!--15 km/hr-->
-              <p class="wind-deg"></p> <!--Degree-->
+              <p class="wind"></p>
+              <!--15 km/hr-->
+              <p class="wind-deg"></p>
+              <!--Degree-->
               <p>Wind</p>
             </div>
           </div>
@@ -117,6 +125,5 @@
       </div>
     </div>
     <script src="script.js" lang="javascript"></script>
-
   </body>
 </html>

@@ -1,7 +1,6 @@
 const api_key = "db81952e32455d09e7859b55479af391 ";
 //https://api.openweathermap.org/data/2.5/weather?q=germany&appid=db81952e32455d09e7859b55479af391&units=metric
-const apiUrl =
-  "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
 const searchField = document.querySelector(".searchInput");
 const searchButton = document.querySelector(".searchButton");
@@ -63,8 +62,19 @@ const value = cities[Index]
 
 const weather = async(city)=>{
     const response = await fetch(apiUrl + city + `&appid=${api_key}`);
-    var dataSet = await response.json();
-    updateWeather(dataSet)
+    if(response.ok){
+      var dataSet = await response.json();
+      updateWeather(dataSet)
+    }
+    else{
+      return Swal.fire({
+        icon: "warning",
+        title: "Sorry",
+        text: "Location not recognized!Please check and try another.",
+        
+      });
+    }
+    
 }
 
 const updateWeather = async (data) => {
@@ -104,5 +114,16 @@ const updateWeather = async (data) => {
 weather(value); // it will be executed only once when the script runs initially. It won't be called indefinitely unless there are other parts of your code that explicitly call it repeatedly.
 
 searchButton.addEventListener("click", () => {
-  weather(searchField.value); 
+  if(searchField.value.trim() === ""){
+    //swal start 
+return Swal.fire({
+  icon: "info",
+  text: "Choose a city to discover its current weather conditions.",
+  
+});
+//swal end
+  }
+  else{
+   weather(searchField.value); 
+  }
 });
