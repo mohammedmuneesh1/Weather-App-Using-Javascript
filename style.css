@@ -163,20 +163,22 @@ searchInput::placeholder {
   .searchBox {
     max-width: 75%;
   }
-  .searchInput {
-    padding: 13px 23px 15px 13px;
-  }
   .searchInput::placeholder {
     font-size: 11px;
   }
-
+  .searchInput {
+    /* padding: 13px 23px 15px 13px; */
+    padding: 15px 30px 19px 23px;
+  }
+  
+  
   .searchButton {
-    width: 31px;
-    height: 31px;
+    width: 36px;
+    height: 36px;
   }
   .s-icon {
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
   }
   .weather-icon {
     width: 150px;
