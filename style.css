@@ -175,12 +175,14 @@ searchInput::placeholder {
   
   
   .searchButton {
-    width: 36px;
-    height: 36px;
+    width: 38px;
+    height: 38px;
   }
   .s-icon {
-    height: 25px;
-    width: 25px;
+    /* height: 25px;
+    width: 25px; */
+    height: 26px;
+    width: 26px;
   }
   .weather-icon {
     width: 150px;
