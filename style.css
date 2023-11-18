@@ -219,11 +219,6 @@ searchInput::placeholder {
     text-align: center;
     margin: 0px;
   }
-  .loading svg{
-    height:200px;
-     width:300px;
-
-  }
 }
 
 
