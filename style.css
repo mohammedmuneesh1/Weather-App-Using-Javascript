@@ -161,13 +161,13 @@ searchInput::placeholder {
 
 @media all and (max-width: 850px) {
   .searchBox {
-    max-width: 80%;
+    max-width: 70%;
   }
   .searchInput {
-    padding: 12px 23px 12px 13px;
+    padding: 13px 23px 15px 13px;
   }
   .searchInput::placeholder {
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .searchButton {
@@ -219,12 +219,6 @@ searchInput::placeholder {
     text-align: center;
     margin: 0px;
   }
-  .loading svg {
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    transform: translate(-50%, -50%);
-}
 }
 
 
