@@ -166,10 +166,10 @@ searchInput::placeholder {
   .searchInput::placeholder {
     font-size: 11px;
   }
-  .searchInput {
-    /* padding: 13px 23px 15px 13px; */
+  /* .searchInput {
+    padding: 13px 23px 15px 13px;
     padding: 15px 30px 19px 23px;
-  }
+  } */
   
   
   .searchButton {
