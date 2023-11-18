@@ -90,9 +90,8 @@ const updateWeather = async (data) => {
   document.querySelector(".wind-deg").innerHTML = `${data.wind.deg} Deg`;
   document.querySelector(".humidity").innerHTML = `${data.main.humidity}%`;
   document.querySelector(".A-P").innerHTML = `${data.main.pressure} Pa`;
-  document.querySelector(
-    ".weather-description"
-  ).innerHTML = `${data.weather[0].description}`;
+  document.querySelector(".weather-description").innerHTML = `${data.weather[0].description.charAt(0).toUpperCase()}${data.weather[0].description.slice(1)}`;
+
 
   // console.log()
 

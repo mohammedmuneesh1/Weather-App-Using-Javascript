@@ -1,255 +1,222 @@
-*{
-    margin:0px;
-    padding:0px;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    overflow: hidden;
-  }
-
-
-body{
-  max-width:100%;
+* {
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow: hidden;
+}
+body {
+  max-width: 100%;
   min-height: 100vh;
-  
-  /*  THEME ONE 
-  background: #36D1DC;  
-  background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  
-  background: linear-gradient(to right, #5B86E5, #36D1DC);  */
-  background: #4b6cb7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-
+  background: -webkit-linear-gradient(
+    to top,
+    #182848,
+    #4b6cb7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #182848,
+    #4b6cb7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-/* .card{
-    width:90%;
-    max-width: 470px;
-    background:linear-gradient(135deg,#00feba,#5b548a);
-    color:#fff;
-    margin:100px auto 0;
-    border-radius: 20px;
-    padding:40px 35px;
-    text-align: center;
-
-} */
-.search{
-    width:100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.search {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.search input{
-    border:0;
-    outline:0;
-    background:#ebfffc;
-    color:#555;
-    padding:10px 25px;
-    height:60px;
-    border-radius: 30px;
-    margin-right:16px;
-    font-size:18px;
-    flex:1;
+.search input {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #555;
+  padding: 10px 25px;
+  height: 60px;
+  border-radius: 30px;
+  margin-right: 16px;
+  font-size: 18px;
+  flex: 1;
 }
-.search button{
-    border:0;
-    outline:0;
-    background:#ebfffc;
-    
+.search button {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
 }
-
-
 
 /*Search Bar Design start*/
 .searchBox {
-    display: flex;
-    margin:2rem auto;
-    max-width:40%;
-    align-items: center;
-    justify-content: space-between;
-    /* gap: 80px; */
-    background: #2f3640;
-    border-radius: 50px;
-    position: relative;
-    /* background:red; */
-  }
-  
-  .searchButton {
-    color: white;
-    position: absolute;
-    right: 8px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
-    border: 0;
-    display: inline-block;
-    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-  }
-  /*hover effect*/
-  button:hover {
-    color: #fff;
-    background-color: #1A1A1A;
-    box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
-    transform: translateY(-3px);
-  }
-  /*button pressing effect*/
-  button:active {
-    box-shadow: none;
-    transform: translateY(0);
-  }
-  
-  .searchInput {
-    border: none;
-    background: none;
-    outline: none;
-    color: white;
-    font-size: 15px;
-    padding: 20px 46px 24px 23px;
-    width:80%;
-  }
+  display: flex;
+  margin: 2rem auto;
+  max-width: 40%;
+  align-items: center;
+  justify-content: space-between;
+  background: #2f3640;
+  border-radius: 50px;
+  position: relative;
+}
 
-  
+.searchButton {
+  color: white;
+  position: absolute;
+  right: 8px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(
+    --gradient-2,
+    linear-gradient(90deg, #2af598 0%, #009efd 100%)
+  );
+  border: 0;
+  display: inline-block;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+/*hover effect*/
+button:hover {
+  color: #fff;
+  background-color: #1a1a1a;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+  transform: translateY(-3px);
+}
+/*button pressing effect*/
+button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  padding: 20px 46px 24px 23px;
+  width: 80%;
+}
+searchInput::placeholder {
+  color: #b0adad;
+}
+
 /*Search Bar Design End*/
 
-
 /*weather details card Design Start */
-
 .weather {
-  /* display: flex; */
-  /* flex-direction: column; */
   text-align: center;
   justify-content: center;
-  width:90%;
-  /* background:blue; */
-  margin:0px auto;
-  /* align-items: center; */
+  width: 90%;
+  margin: 0px auto;
 }
-.weather-icon{
-   width:200px;
-   /* margin-top: 30px; */
-   /* margin:0px auto; */
+.weather-icon {
+  width: 200px;
+  margin-bottom:-.5rem;
 }
-.weather-description{
-  color:whitesmoke;
-  margin-top:-5rem;
-  font-size:20px;
+.weather-description {
+  color: whitesmoke;
+  /* margin-top: -50rem; */
+  font-size: 20px;
 }
-
 
 .weather-details h1 {
-  font-size:5.3rem;
+  font-size: 5.3rem;
   color: whitesmoke;
   font-weight: 600;
   /* margin-top: -1rem; */
-  letter-spacing:.1em;
+  letter-spacing: 0.1em;
 }
-.max-min{
-  color:white;
-  margin-top:-0.5rem;
-  font-size:1rem;
-  letter-spacing:.1rem;
+.max-min {
+  color: white;
+  margin-top: -0.5rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
 }
-.weather-details h2{
+.weather-details h2 {
   font-size: 2.8rem;
   color: whitesmoke;
   font-weight: 400;
-  /* margin-top: -1.5rem; */
 }
-.col-sub p{
-  color:white;
+.col-sub p {
+  color: white;
   text-align: center;
-  margin:.5rem 0rem;
-  font-weight:500;
+  margin: 0.5rem 0rem;
+  font-weight: 500;
 }
-.details{
-  width:90%;
-  
+.details {
+  width: 90%;
   margin-top: 3rem;
   display: flex;
-  /* flex-direction: row; */
   align-items: center;
-  /* text-align: left; */
   justify-content: space-around;
-  /* background:red; */
-  width:100%;
+
+  width: 100%;
 }
-.col{
+.col {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between;   */
 }
-.col-sub{
-  margin-left:1rem;
+.col-sub {
+  margin-left: 1rem;
 }
 /*weather details card Design End */
 
-
-
-
-
-@media all and (max-width:850px){
-  .searchBox{
-      max-width: 80%;
+@media all and (max-width: 850px) {
+  .searchBox {
+    max-width: 80%;
   }
-  .searchInput{
-  padding: 12px 23px 12px 13px;
+  .searchInput {
+    padding: 12px 23px 12px 13px;
+  }
+  .searchInput::placeholder {
+    font-size: 10px;
+  }
 
+  .searchButton {
+    width: 31px;
+    height: 31px;
   }
-  .searchButton{
-      width: 31px;
-      height: 31px;
+  .s-icon {
+    height: 20px;
+    width: 20px;
   }
-  .s-icon{
-    height:20px;
-    width:20px;
+  .weather-icon {
+    width: 150px;
   }
-  .weather-icon{
-   width:150px;
-     
-  }
-  .weather-description{
-    color:whitesmoke;
-    margin-top:-5rem;
-    font-size:.8rem;
+  .weather-description {
+    color: whitesmoke;
+    margin-top: -5rem;
+    font-size: 0.8rem;
     letter-spacing: 1px;
   }
-  .weather-details h1{
-    font-size:3rem;
-  font-weight: 500;
-  letter-spacing: 2px;
+  .weather-details h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 2px;
   }
-  .max-min{
-    color:white;
-    margin-top:-0.5rem;
-    font-size:.75rem;
+  .max-min {
+    color: white;
+    margin-top: -0.5rem;
+    font-size: 0.75rem;
     margin-top: 1px;
-    letter-spacing:0px;
+    letter-spacing: 0px;
   }
-  .weather-details h2{
+  .weather-details h2 {
     font-size: 1.9rem;
     margin-top: 0rem;
   }
-  .details{
+  .details {
     justify-content: space-around;
   }
   .col {
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     text-align: center;
-    /* background:red; */
   }
-
-  .col img{
-    width:3rem
+  .col img {
+    width: 3rem;
   }
-  .col-sub{
-    width:100%;
+  .col-sub {
+    width: 100%;
     text-align: center;
-    margin:0px;
-
+    margin: 0px;
   }
-
 }
-
