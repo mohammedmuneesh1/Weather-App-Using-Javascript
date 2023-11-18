@@ -161,7 +161,7 @@ searchInput::placeholder {
 
 @media all and (max-width: 850px) {
   .searchBox {
-    max-width: 70%;
+    max-width: 75%;
   }
   .searchInput {
     padding: 13px 23px 15px 13px;
