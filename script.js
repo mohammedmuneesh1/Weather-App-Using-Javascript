@@ -58,7 +58,7 @@ const cities = [
   "Queenstown",
 ];
 const Index = Math.floor(Math.random() * cities.length);
-const city = cities[Index]
+const value = cities[Index]
 
 
 const weather = async(city)=>{
@@ -101,7 +101,7 @@ const updateWeather = async (data) => {
   if (data.weather[0].main === "Snow")
     return (weatherImage.src = "images/smoke.png");
 };
-weather(city); // it will be executed only once when the script runs initially. It won't be called indefinitely unless there are other parts of your code that explicitly call it repeatedly.
+weather(value); // it will be executed only once when the script runs initially. It won't be called indefinitely unless there are other parts of your code that explicitly call it repeatedly.
 
 searchButton.addEventListener("click", () => {
   weather(searchField.value); 
