@@ -114,15 +114,31 @@ weather(value); // it will be executed only once when the script runs initially.
 
 searchButton.addEventListener("click", () => {
   if(searchField.value.trim() === ""){
-    //swal start 
 return Swal.fire({
   icon: "info",
   text: "Choose a city to discover its current weather conditions.",
   
 });
-//swal end
   }
   else{
    weather(searchField.value); 
   }
 });
+
+
+
+//LOADING EFFECT FUNCTION
+
+
+function hideLoading() {
+  const loadingElement = document.querySelector('.loading');
+  // loadingElement.style.opacity = '1'; // Set opacity to 0 for the fade-out effect
+  setTimeout(() => {
+    loadingElement.style.display = 'none'; // Set display to none after the fade-out effect
+  }, 2100); // Additional 2 seconds for the transition to complete
+}
+
+// Call the hideLoading function when the page loads
+window.onload = function () {
+  hideLoading();
+};
