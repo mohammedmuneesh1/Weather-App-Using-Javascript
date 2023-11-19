@@ -113,7 +113,6 @@ searchInput::placeholder {
 }
 .weather-description {
   color: whitesmoke;
-  /* margin-top: -50rem; */
   font-size: 20px;
 }
 
@@ -121,7 +120,6 @@ searchInput::placeholder {
   font-size: 5.3rem;
   color: whitesmoke;
   font-weight: 600;
-  /* margin-top: -1rem; */
   letter-spacing: 0.1em;
 }
 .max-min {
@@ -167,9 +165,7 @@ searchInput::placeholder {
     font-size: 11px;
   }
   .searchInput {
-    /* padding: 13px 23px 15px 13px; */
-    /* padding: 15px 30px 19px 23px; */
-  padding: 17px 35px 21px 23px;
+    padding: 15px 30px 19px 23px;
 
   }
   
@@ -234,8 +230,15 @@ searchInput::placeholder {
     font-size: 10px;
   }
   .searchInput {
-    
   padding: 12px 10px 15px 10px;
+  }
+  .searchButton {
+    width: 32px;
+    height: 32px;
+  }
+  .s-icon {
+    height: 23px;
+    width: 23px;
 
   }
 
